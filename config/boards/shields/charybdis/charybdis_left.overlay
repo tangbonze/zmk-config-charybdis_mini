@@ -18,7 +18,7 @@
 };
 
 &pinctrl {
-    spi1_default: spi1_default {
+    spi0_default: spi0_default {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 17)>,
@@ -26,7 +26,7 @@
         };
     };
 
-    spi1_sleep: spi1_sleep {
+    spi0_sleep: spi1_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 17)>,
@@ -36,7 +36,7 @@
     };
 };
 
-&spi1 {
+&spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi1_default>;
