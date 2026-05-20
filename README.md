@@ -1,1 +1,1 @@
-zmk-config for charybdis mini(3x6)
+<img src="keymap-drawer/charybdis.svg" >
